@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Shopify - Challenge</string>
+    <string name="start_title">Shopify - Challenge</string>
+    <string name="developer_name">Aziz Utku Kağıtcı</string>
+    <string name="cd_shopify_logo">Shopify Logo</string>
+    <string name="bar_title">Shopify - Challenge</string>
 </resources>
