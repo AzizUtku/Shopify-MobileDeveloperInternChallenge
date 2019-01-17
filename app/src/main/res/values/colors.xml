@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryDark">#000000</color>
-    <color name="colorPrimary">#fafafa</color>
-    <color name="colorAccent">#000000</color>
+    <color name="colorPrimary">#E93829</color>
+    <color name="colorPrimaryDark">#c22b1f</color>
+    <color name="colorAccent">#F0796F</color>
+
+    <!--<color name="colorPrimaryDark">#000000</color>-->
+    <!--<color name="colorPrimary">#fafafa</color>-->
+    <!--<color name="colorAccent">#000000</color>-->
 
     <color name="colorPrimaryStart">#E93829</color>
     <color name="colorPrimaryDarkStart">#E93829</color>
     <color name="colorAccentStart">#F0796F</color>
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+    <!-- ./ 1st Gradient color -->
 </resources>
