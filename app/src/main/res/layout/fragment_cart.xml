@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragments.CartFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/fragment_favorites_txt_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/avenirnext_regular"
+            android:gravity="center"
+            android:text="The cart is empty."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fragment_favorites_txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_favorites_txt_empty"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:fontFamily="@font/avenirnext_regular"
+            android:gravity="center"
+            android:text="This page doesn't work yet and I am really sorry for this. Unfortunately, I didn't find time to complete this part since I made a travel plan between January 20th and 26th in advance and the deadline for this application is January 21st."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.azutka.shopify_challenge.adapters.CollectionAdapter;
 import com.azutka.shopify_challenge.interfaces.OnTaskCompletedListener;
 import com.azutka.shopify_challenge.models.Collection;
 import com.azutka.shopify_challenge.requests.GeneralRequest;
@@ -27,6 +26,7 @@ public class StartActivity extends AppCompatActivity {
         OnTaskCompletedListener<Collection> onTaskCompletedListener = new OnTaskCompletedListener<Collection>() {
             @Override
             public void onTaskCompleted(List<Collection> collections) {
+                collections.add(0,null);
                 Intent mainIntent = new Intent(StartActivity.this, MainActivity.class);
                 mainIntent.putExtra("collectionsExtra", (ArrayList<Collection>) collections);
                 mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

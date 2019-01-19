@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_list_rlt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:id="@+id/product_header_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_item_1">
+
+        <ImageView
+            android:id="@+id/product_img_product"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitEnd"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_aerodynamic" />
+
+        <TextView
+            android:id="@+id/product_txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/avenirnext_bold"
+            android:text="Clock"
+            android:textColor="#E6FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/product_buttons_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="125dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fab_border"
+            android:padding="0dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/product_fab_fav"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/product_info_rlt"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:backgroundTint="@android:color/white"
+                app:elevation="0dp"
+                app:srcCompat="@drawable/ic_favorite_border" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/product_info_rlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_header_rlt"
+        android:layout_marginTop="35dp">
+
+        <RelativeLayout
+            android:id="@+id/product_rlt_variant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_txt_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/product_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_badge_green"
+                android:fontFamily="@font/avenirnext_medium"
+                android:gravity="center"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:text="@string/back"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/product_txt_variant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toEndOf="@id/product_btn_back"
+                android:fontFamily="@font/avenirnext_medium"
+                android:text="Mint green"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/product_btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@id/product_txt_variant"
+                android:background="@drawable/bg_badge_green"
+                android:fontFamily="@font/avenirnext_medium"
+                android:gravity="center"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:text="@string/forward"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/product_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/avenirnext_regular"
+            android:maxLines="2"
+            android:text="Aerodynamic Concrete Clock"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/product_txt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_txt_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/avenirnext_regular"
+            android:maxLines="4"
+            android:text="Transition rich vortals"
+            android:textAlignment="center"
+            android:textColor="#8C000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/product_txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_rlt_variant"
+            android:fontFamily="@font/avenirnext_medium"
+            android:text="Price: $4.32"
+            android:textColor="#000" />
+
+        <RelativeLayout
+            android:id="@+id/product_rlt_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_txt_price">
+
+            <TextView
+                android:id="@+id/product_txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/avenirnext_medium"
+                android:text="Amount: 1"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/product_btn_decrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/product_txt_amount"
+                android:background="@drawable/bg_badge_gray"
+                android:fontFamily="@font/avenirnext_medium"
+                android:gravity="center"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/product_btn_increase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@id/product_btn_decrease"
+                android:background="@drawable/bg_badge_gray"
+                android:fontFamily="@font/avenirnext_medium"
+                android:gravity="center"
+                android:minWidth="25dp"
+                android:minHeight="25dp"
+                android:text="+"
+                android:textColor="#000" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/product_txt_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_txt_weight"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/avenirnext_medium"
+            android:text="134 piece available"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/product_txt_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_rlt_variant"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/avenirnext_medium"
+            android:text="Weight: 4.917 kg"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/product_rlt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_info_rlt"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/product_txt_vendor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@id/product_btn_add_cart"
+            android:fontFamily="@font/avenirnext_medium"
+            android:text="By Jenkins, Orn and Blick"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/product_btn_add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_btn_only_stroke_selector"
+            android:elevation="0dp"
+            android:fontFamily="@font/avenirnext_medium"
+            android:minHeight="35dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Add to cart"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/product_view_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/product_rlt_bottom"
+        android:layout_marginTop="24dp"
+        android:background="#1F000000" />
+
+</RelativeLayout>

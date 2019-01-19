@@ -8,14 +8,31 @@
     tools:context=".MainActivity">
 
     <include
-        android:id="@+id/main_toolbar"
-        layout="@layout/app_main_bar"/>
+        layout="@layout/app_main_bar"
+        android:id="@+id/main_toolbar">
+    </include>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/main_collections_recycler"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/navigation_items"
+        android:theme="@style/Widget.BottomNavigationView">
+    </android.support.design.widget.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/main_toolbar" />
+        android:layout_above="@+id/main_bottom_nav"
+        android:layout_below="@id/main_toolbar"
+        android:layout_centerHorizontal="true">
 
+    </FrameLayout>
 
 </RelativeLayout>

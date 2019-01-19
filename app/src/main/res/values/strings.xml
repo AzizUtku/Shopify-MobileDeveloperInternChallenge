@@ -4,4 +4,8 @@
     <string name="developer_name">Aziz Utku Kağıtcı</string>
     <string name="cd_shopify_logo">Shopify Logo</string>
     <string name="bar_title">Shopify - Challenge</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
 </resources>

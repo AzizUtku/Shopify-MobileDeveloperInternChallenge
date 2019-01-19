@@ -27,7 +27,7 @@
         android:layout_below="@+id/start_img_logo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:fontFamily="serif"
+        android:fontFamily="@font/avenirnext_bold"
         android:text="@string/start_title"
         android:textColor="#fff"
         android:textSize="23sp" />
@@ -39,7 +39,7 @@
         android:layout_below="@+id/start_txt_title"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
-        android:fontFamily="serif"
+        android:fontFamily="@font/avenirnext_regular"
         android:text="@string/developer_name"
         android:textColor="#fff"
         android:textSize="16sp" />
